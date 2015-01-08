@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Category";
+    Layout = "~/Views/Layouts/Default/_asideLayout.cshtml";
+}
+
+<h2>Category</h2>
+
+@section aside{
+
+    <h3>Products</h3>
+    <ul>
+    @{
+        for(int i = 1; i<9; i++){
+            string words = Html.Ipsum().Words(3).ToString();
+            <li>@Html.ActionLink(words, "Details", "Product", new { Id = i }, null)</li>
+        }   
+    }
+    </ul>    
+    
+}

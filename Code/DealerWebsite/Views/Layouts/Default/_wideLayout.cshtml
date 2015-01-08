@@ -15,7 +15,14 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-    @RenderBody()
+
+    @Html.Action("MainNav", "Navigation")
+
+    <div class="row">
+        <article class="large-12 columns">
+            @RenderBody()    
+        </article>
+    </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/foundation")

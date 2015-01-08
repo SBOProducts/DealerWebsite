@@ -3,3 +3,8 @@ C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\DealerDA
 C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\obj\Debug\DealerDAL.csprojResolveAssemblyReference.cache
 C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\obj\Debug\DealerDAL.dll
 C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\obj\Debug\DealerDAL.pdb
+C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\NLipsum.Core.dll
+C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\Prototyping.Ipsum.dll
+C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\Prototyping.Placeholdit.dll
+C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\Prototyping.Ipsum.xml
+C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\Prototyping.Placeholdit.xml

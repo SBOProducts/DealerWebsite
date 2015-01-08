@@ -1,0 +1,11 @@
+﻿@{
+    ViewBag.Title = "Services";
+    Layout = "~/Views/Layouts/Default/_asideLayout.cshtml";
+}
+
+@section aside{
+    <h3>Services</h3>
+    @Html.Ipsum().ul(listCount : 3, wordCount : 2, links : true)
+}
+
+<h2>Services</h2>
