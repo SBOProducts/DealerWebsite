@@ -1,0 +1,5 @@
+C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\DealerDAL.dll
+C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\DealerDAL.pdb
+C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\obj\Debug\DealerDAL.csprojResolveAssemblyReference.cache
+C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\obj\Debug\DealerDAL.dll
+C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\obj\Debug\DealerDAL.pdb
