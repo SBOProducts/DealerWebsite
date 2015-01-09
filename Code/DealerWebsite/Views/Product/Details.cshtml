@@ -5,15 +5,60 @@
 
 @section aside{
 
-    <h3>Related Products</h3>    
+    <h3>Related Products</h3>
     <ul>
-    @{
-        for(int i = 1; i<9; i++){
-            string words = Html.Ipsum().Words(3).ToString();
+        @{
+            for (int i = 1; i < 9; i++)
+            {
+                string words = Html.Ipsum().Words(3).ToString();
             <li>@Html.ActionLink(words, "Details", "Product", new { Id = i }, null)</li>
-        }   
-    }
-    </ul>    
+            }   
+        }
+    </ul>
 }
 
-<h3>Product Details</h3>
+    
+
+
+<div itemscope itemtype="http://schema.org/Product">
+    <meta itemprop="productID" content="1" />
+
+    <h2 itemprop="name">@Html.Ipsum().Words(5)</h2>
+
+    <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+        <span itemprop="priceCurrency" content="USD">$</span>
+        <span itemprop="price" content="1000.00">1,000.00</span>
+        <link rel="tag" itemprop="availability" href="http://schema.org/InStock" />
+        In stock
+    </div>
+
+    <h3>Description</h3>
+    <div itemprop="description">
+        @Html.Ipsum().p(4, 2)
+    </div>
+
+    <h3>Images</h3>
+    
+    <div itemscope itemtype="http://schema.org/ItemList">
+        <ul class="clearing-thumbs" data-clearing>
+             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Image">
+                <meta itemprop="name" content="Product Name" />
+                 <meta itemprop="datePublished" content="2015-01-01" />
+                <a class="th" href="@Url.Content("~/Images/comet.jpg")">
+                    <img itemprop="contentUrl" src="@Url.Content("~/Images/comet-th-sm.jpg")" />
+                </a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Image">
+                <a class="th" href="@Url.Content("~/Images/comet.jpg")">
+                    <img src="@Url.Content("~/Images/comet-th-sm.jpg")" />
+                </a>
+            </li>
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Image">
+                <a class="th" href="@Url.Content("~/Images/comet.jpg")">
+                    <img src="@Url.Content("~/Images/comet-th-sm.jpg")" />
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>

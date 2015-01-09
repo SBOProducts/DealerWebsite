@@ -8,15 +8,38 @@
 
     <h3>Products</h3>
     <ul>
-    @{
-        for(int i = 1; i<9; i++){
-            string words = Html.Ipsum().Words(3).ToString();
+        @{
+            for (int i = 1; i < 9; i++)
+            {
+                string words = Html.Ipsum().Words(3).ToString();
             <li>@Html.ActionLink(words, "Details", "Product", new { Id = i }, null)</li>
-        }   
-    }
-    </ul>    
-    
+            }   
+        }
+    </ul>
+
 }
 
 
-<h2>Category</h2>
+<div itemscope itemtype="http://schema.org/ItemList">
+    <h2 itemprop="name">Category Name</h2>
+    <div class="itemCount">
+        <span itemprop="numberOfItems">9</span> Items
+    </div>
+    <div itemprop="description">
+        @Html.Ipsum().p()
+    </div>
+
+    <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+        @for(int i = 0; i<9; i++){
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">
+                <a itemprop="url" href="@Url.Action("Details", "Product", new { Id = 1 })">
+                    <div class="th">
+                        @Html.Placehold(400, 400, null, null, null, new {alt="Photo alt text", itemprop = "image" })
+                    </div>
+                    <div itemprop="name">@Html.Ipsum().Words(5)</div>
+                </a>
+            </li>
+        }
+    </ul>
+
+</div>
