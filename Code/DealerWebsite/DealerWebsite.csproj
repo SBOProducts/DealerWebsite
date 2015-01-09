@@ -193,6 +193,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\InventoryController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
@@ -347,6 +348,8 @@
     <Content Include="Views\Inventory\Category.cshtml" />
     <Content Include="Views\Services\Service.cshtml" />
     <Content Include="Views\Product\Details.cshtml" />
+    <Content Include="Views\Image\ImageGrid.cshtml" />
+    <Content Include="Views\Image\ImageList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

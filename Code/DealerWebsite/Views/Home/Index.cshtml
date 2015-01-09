@@ -3,16 +3,27 @@
 }
 
 @section aside{
-    @Html.Placehold(300, 100)
+    @Html.Placehold(1200, 300)
     
-    <h3>Services</h3>
-    @Html.Ipsum().ul(listCount : 3, wordCount : 2, links : true)
-    <h3>Parts</h3>
-    @Html.Ipsum().ul(listCount : 8, wordCount : 2, links : true)
+    <div class="row">
+        <div class="small-6 large-12 columns">
+            <h3>Services</h3>
+            @Html.Ipsum().ul(listCount: 3, wordCount: 2, links: true, ulAttributes: new {@class="side-nav" })
+        </div>
+        <div class="small-6 large-12 columns">
+            <h3>Parts</h3>
+            @Html.Ipsum().ul(listCount : 8, wordCount : 2, links : true, ulAttributes: new {@class="side-nav" })
+        </div>
+    </div>
+    
+    
+    
+    
+        
 }
 
-<div class="row">
-    <div class="large-12 columns">
-        
-    </div>
-</div>
+<h1>Company Name</h1>
+@Html.Placehold(900, 200)
+@Html.Ipsum().p(paragraphCount: 3, sentenceCount:5)
+<h2>Featured Items</h2>
+@Html.Action("ImageGrid", "Image")

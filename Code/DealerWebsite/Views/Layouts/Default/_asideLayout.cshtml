@@ -21,12 +21,12 @@
     @Html.Action("MainNav", "Navigation")
 
     <div class="row">
-        <aside class="large-3 columns">
-            @RenderSection("aside", true)
-        </aside>
-        <article class="large-9 columns">
+        <article class="large-9 large-push-3 columns">
             @RenderBody()
         </article>
+        <aside class="large-3 large-pull-9 columns">
+            @RenderSection("aside", true)
+        </aside>
     </div>
     
 
