@@ -6,13 +6,13 @@
 
 @section aside{
 
-    <h3>Products</h3>
+    <h3>Categories</h3>
     <ul>
         @{
-            for (int i = 1; i < 9; i++)
+            for (int i = 1; i < 5; i++)
             {
                 string words = Html.Ipsum().Words(3).ToString();
-            <li>@Html.ActionLink(words, "Details", "Product", new { Id = i }, null)</li>
+            <li>@Html.ActionLink(words, "Category", "Inventory", new { Id = i }, null)</li>
             }   
         }
     </ul>
@@ -22,13 +22,14 @@
 
 <div itemscope itemtype="http://schema.org/ItemList">
     <h2 itemprop="name">Category Name</h2>
-    <div class="itemCount">
-        <span itemprop="numberOfItems">9</span> Items
-    </div>
+    
     <div itemprop="description">
         @Html.Ipsum().p()
     </div>
 
+    <div class="itemCount">
+        <h4><span itemprop="numberOfItems">9</span> Items</h4>
+    </div>
     <ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
         @for(int i = 0; i<9; i++){
             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Product">

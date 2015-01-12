@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Gallery";
+    Layout = "~/Views/Layouts/Default/_asideLayout.cshtml";
+}
+
+
+@section aside{
+    <h3>Galleries</h3>
+    @Html.Ipsum().ul(listCount : 5, wordCount : 2, links : true)
+}
+
+
+<h2>Gallery</h2>
+
+@Html.Ipsum().p(1)
+
+<blockquote>
+    @Html.Ipsum().p(1)
+    <cite>Happy Customer</cite>
+</blockquote>
+
+@Html.Action("ImageGrid", "Image")

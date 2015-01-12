@@ -28,8 +28,9 @@
     <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
         <span itemprop="priceCurrency" content="USD">$</span>
         <span itemprop="price" content="1000.00">1,000.00</span>
-        <link rel="tag" itemprop="availability" href="http://schema.org/InStock" />
-        In stock
+        <p>
+            <link rel="tag" itemprop="availability" href="http://schema.org/InStock" /> In stock
+        </p>
     </div>
 
     <h3>Description</h3>
@@ -41,24 +42,21 @@
     
     <div itemscope itemtype="http://schema.org/ItemList">
         <ul class="clearing-thumbs" data-clearing>
-             <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Image">
+             @for(int i = 0; i<10; i++){
+            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ImageObject">
                 <meta itemprop="name" content="Product Name" />
-                 <meta itemprop="datePublished" content="2015-01-01" />
+                <meta itemprop="datePublished" content="2015-01-01" />
+                <meta itemprop="representativeOfPage" content="true" />
                 <a class="th" href="@Url.Content("~/Images/comet.jpg")">
-                    <img itemprop="contentUrl" src="@Url.Content("~/Images/comet-th-sm.jpg")" />
+                    <img src="@Url.Content("~/Images/comet-th-sm.jpg")" itemprop="contentUrl" data-caption="Image Caption" />
                 </a>
             </li>
-            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Image">
-                <a class="th" href="@Url.Content("~/Images/comet.jpg")">
-                    <img src="@Url.Content("~/Images/comet-th-sm.jpg")" />
-                </a>
-            </li>
-            <li itemprop="itemListElement" itemscope itemtype="http://schema.org/Image">
-                <a class="th" href="@Url.Content("~/Images/comet.jpg")">
-                    <img src="@Url.Content("~/Images/comet-th-sm.jpg")" />
-                </a>
-            </li>
+             }
         </ul>
     </div>
 
+    <h3>Videos</h3>
+    <div class="flex-video">
+        <iframe width="420" height="315" src="//www.youtube.com/embed/aiBt44rrslw" frameborder="0" allowfullscreen></iframe>
+    </div>
 </div>

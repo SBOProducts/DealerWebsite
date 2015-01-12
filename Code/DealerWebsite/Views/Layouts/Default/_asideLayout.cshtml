@@ -4,21 +4,25 @@
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8" />
-
-    @*Set the viewport width to device width for mobile *@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="@ViewBag.Keywords" />
+    <meta name="description" content="@ViewBag.Description" />
+    <title>@ViewBag.Title - Company Name</title>
 
-    <title>@ViewBag.Title - Welcome to Foundation</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-
     @Styles.Render("~/Content/foundation/css")
-
     @RenderSection("head", required: false)
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
 
     @Html.Action("MainNav", "Navigation")
+    <nav class="breadcrumbs">
+      <a href="#">Home</a>
+      <a href="#">Features</a>
+      <a class="unavailable" href="#">Gene Splicing</a>
+      <a class="current" href="#">Cloning</a>
+    </nav>
 
     <div class="row">
         <article class="large-9 large-push-3 columns">

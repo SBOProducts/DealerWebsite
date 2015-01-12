@@ -1,45 +1,48 @@
 ﻿<nav class="top-bar" data-topbar role="navigation" data-options="is_hover:true">
-  <ul class="title-area">
-    <!-- Title Area -->
-    <li class="name">
-      <h1>@Html.ActionLink("Company Name", "Index", "Home")</h1>
-    </li>
-    <li class="toggle-topbar menu-icon">
-        <a href="@Url.Content("~/")"><span>Menu</span></a>
-    </li>
-  </ul>
-  <section class="top-bar-section">
-    <ul class="left">
-      <li class="divider"></li>
-      <li>@Html.ActionLink("Home", "Index", "Home")</li>
-      <li class="divider"></li>
-      <li class="has-dropdown">
-          @Html.ActionLink("Inventory", "Index", "Inventory")
-        <ul class="dropdown">
-            <li id="" data-seq="1">@Html.ActionLink("Category 1", "Category", "Inventory", new { Id = 1 }, null)</li>
-            <li id="" data-seq="1">@Html.ActionLink("Category 2", "Category", "Inventory", new { Id = 2 }, null)</li>
-        </ul>
-      </li>
-      <li class="has-dropdown">
-          @Html.ActionLink("Services", "Index", "Services")
-        <ul class="dropdown">
-            <li id="" data-seq="1">@Html.ActionLink("Service 1", "Service", "Services", new { Id = 1 }, null)</li>
-            <li id="" data-seq="1">@Html.ActionLink("Service 2", "Service", "Services", new { Id = 2 }, null)</li>
-        </ul>
-      </li>
-      <li class="divider"></li>
-      <li>@Html.ActionLink("About", "About", "Home")</li>
-      <li class="divider"></li>
-      <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-      <li class="divider"></li>
+    <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+            <h1>@Html.ActionLink("Company Name", "Index", "Home")</h1>
+        </li>
+        <li class="toggle-topbar menu-icon">
+            <a href="@Url.Content("~/")"><span>Menu</span></a>
+        </li>
     </ul>
-    <ul class="right">
-        <li class="divider"></li>
-        <li>@Html.Partial("_LoginPartial")</li>
-        @if (User.Identity.IsAuthenticated)
-        {
-            <li>@Html.ActionLink("Help", "Index", "Help")</li>
-        }
-    </ul>
-  </section>
+    <section class="top-bar-section">
+        <ul class="left">
+            <li class="divider"></li>
+            <li>@Html.ActionLink("Home", "Index", "Home")</li>
+            <li class="divider"></li>
+            <li class="has-dropdown">
+                @Html.ActionLink("Inventory", "Index", "Inventory")
+                <ul class="dropdown">
+                    <li id="" data-seq="1">@Html.ActionLink("Category 1", "Category", "Inventory", new { Id = 1 }, null)</li>
+                    <li id="" data-seq="1">@Html.ActionLink("Category 2", "Category", "Inventory", new { Id = 2 }, null)</li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li class="has-dropdown">
+                @Html.ActionLink("Services", "Index", "Services")
+                <ul class="dropdown">
+                    <li id="" data-seq="1">@Html.ActionLink("Service 1", "Service", "Services", new { Id = 1 }, null)</li>
+                    <li id="" data-seq="1">@Html.ActionLink("Service 2", "Service", "Services", new { Id = 2 }, null)</li>
+                </ul>
+            </li>
+            <li class="divider"></li>
+            <li>@Html.ActionLink("Gallery", "Gallery", "Home")</li>
+            <li class="divider"></li>
+            <li>@Html.ActionLink("About", "About", "Home")</li>
+            <li class="divider"></li>
+            <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+            <li class="divider"></li>
+        </ul>
+        <ul class="right">
+            <li class="divider"></li>
+            <li>@Html.Partial("_LoginPartial")</li>
+            @if (User.Identity.IsAuthenticated)
+            {
+                <li>@Html.ActionLink("Help", "Index", "Help")</li>
+            }
+        </ul>
+    </section>
 </nav>

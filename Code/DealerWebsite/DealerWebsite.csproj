@@ -339,6 +339,7 @@
     <Content Include="Views\Product\Details.cshtml" />
     <Content Include="Views\Image\ImageGrid.cshtml" />
     <Content Include="Views\Image\ImageList.cshtml" />
+    <Content Include="Views\Home\Gallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

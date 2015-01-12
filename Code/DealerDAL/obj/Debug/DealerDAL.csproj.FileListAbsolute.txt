@@ -8,3 +8,13 @@ C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\Prototyp
 C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\Prototyping.Placeholdit.dll
 C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\Prototyping.Ipsum.xml
 C:\Users\cb0290\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\Prototyping.Placeholdit.xml
+C:\Users\Nathan\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\DealerDAL.dll
+C:\Users\Nathan\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\DealerDAL.pdb
+C:\Users\Nathan\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\NLipsum.Core.dll
+C:\Users\Nathan\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\Prototyping.Ipsum.dll
+C:\Users\Nathan\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\Prototyping.Placeholdit.dll
+C:\Users\Nathan\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\Prototyping.Ipsum.xml
+C:\Users\Nathan\Documents\GitHub\DealerWebsite\Code\DealerDAL\bin\Debug\Prototyping.Placeholdit.xml
+C:\Users\Nathan\Documents\GitHub\DealerWebsite\Code\DealerDAL\obj\Debug\DealerDAL.csprojResolveAssemblyReference.cache
+C:\Users\Nathan\Documents\GitHub\DealerWebsite\Code\DealerDAL\obj\Debug\DealerDAL.dll
+C:\Users\Nathan\Documents\GitHub\DealerWebsite\Code\DealerDAL\obj\Debug\DealerDAL.pdb
