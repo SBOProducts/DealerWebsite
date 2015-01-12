@@ -16,6 +16,7 @@ namespace DealerWebsite.Controllers
 
         public ActionResult ImageList()
         {
+            
             return PartialView();
         }
 
