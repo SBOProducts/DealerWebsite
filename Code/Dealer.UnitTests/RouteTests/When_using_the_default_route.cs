@@ -10,7 +10,7 @@ using MvcRouteTester;
 using DealerWebsite.Controllers;
 
 
-namespace Dealer.UnitTests
+namespace Dealer.UnitTests.RouteTests
 {
     [TestFixture]
     public class When_using_the_default_route

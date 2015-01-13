@@ -14,5 +14,9 @@ namespace DealerWebsite.Controllers
             return PartialView();
         }
 
+        public ActionResult Breadcrumbs()
+        {
+            return PartialView();
+        }
     }
 }

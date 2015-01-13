@@ -3,27 +3,47 @@
 }
 
 @section aside{
-    @Html.Placehold(1200, 300)
-    
+    @Html.Placehold(1200, 300, "Logo")
+
     <div class="row">
-        <div class="small-6 large-12 columns">
-            <h3>Services</h3>
-            @Html.Ipsum().ul(listCount: 3, wordCount: 2, links: true, ulAttributes: new {@class="side-nav" })
+        <div class="small-12 medium-4 large-12 columns">
+            <h3>Inventory</h3>
+            @Html.Ipsum().ul(listCount: 8, wordCount: 3, links: true, ulAttributes: new { @class = "side-nav" })
         </div>
-        <div class="small-6 large-12 columns">
+        <div class="small-12 medium-4 large-12 columns">
             <h3>Parts</h3>
-            @Html.Ipsum().ul(listCount : 8, wordCount : 2, links : true, ulAttributes: new {@class="side-nav" })
+            @Html.Ipsum().ul(listCount: 8, wordCount: 2, links: true, ulAttributes: new { @class = "side-nav" })
+        </div>
+        <div class="small-12 medium-4 large-12 columns">
+            <h3>Service</h3>
+            @Html.Ipsum().ul(listCount: 9, wordCount: 2, links: true, ulAttributes: new { @class = "side-nav" })
         </div>
     </div>
-    
-    
-    
-    
-        
+
+
 }
 
 <h1>Company Name</h1>
-@Html.Placehold(900, 200)
-@Html.Ipsum().p(paragraphCount: 3, sentenceCount:5)
+
+
+
+<ul class="example-orbit" data-orbit>
+    <li>
+        @Html.Placehold(900, 400, "First Image", null, null, new { alt = "First Image" })
+        <div class="orbit-caption">Caption One.</div>
+    </li>
+    <li class="active">
+        @Html.Placehold(900, 400, "Second Image", null, null, new { alt = "Second Image" })
+        <div class="orbit-caption">Caption Two. </div>
+    </li>
+    <li>
+        @Html.Placehold(900, 400, "Third Image", null, null, new { alt = "Third Image" })
+        <div class="orbit-caption">Caption Three. </div>
+    </li>
+</ul>
+
+
+@Html.Ipsum().p(paragraphCount: 3, sentenceCount: 5)
+
 <h2>Featured Items</h2>
 @Html.Action("ImageGrid", "Image")
