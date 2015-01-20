@@ -30,29 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="NLipsum.Core">
-      <HintPath>..\packages\Prototyping_MVC.1.2\lib\NLipsum.Core.dll</HintPath>
-    </Reference>
-    <Reference Include="Prototyping.Ipsum">
-      <HintPath>..\packages\Prototyping_MVC.1.2\lib\Prototyping.Ipsum.dll</HintPath>
-    </Reference>
-    <Reference Include="Prototyping.Placeholdit">
-      <HintPath>..\packages\Prototyping_MVC.1.2\lib\Prototyping.Placeholdit.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Ipsum_examples.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
