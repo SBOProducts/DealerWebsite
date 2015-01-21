@@ -3,6 +3,92 @@
 }
 
 @section aside{
-    <h3>Galleries</h3>
-    @Html.Ipsum().ul(listCount : 5, wordCount : 2, links : true)
+    @Html.Placehold(1200, 300, "Logo")
+
+    <div class="row">
+        <div class="small-12 medium-4 large-12 columns">
+            <h3>Inventory</h3>
+            @Html.Ipsum().ul(listCount: 8, wordCount: 3, links: true, ulAttributes: new { @class = "side-nav" } )
+        </div>
+        <div class="small-12 medium-4 large-12 columns">
+            <h3>Parts</h3>
+            @Html.Ipsum().ul(listCount: 8, wordCount: 2, links: true, ulAttributes: new { @class = "side-nav" })
+        </div>
+        <div class="small-12 medium-4 large-12 columns">
+            <h3>Service</h3>
+            @Html.Ipsum().ul(listCount: 9, wordCount: 2, links: true, ulAttributes: new { @class = "side-nav" })
+        </div>
+    </div>
 }
+
+<h2 class="text-center">Contact Us</h2>
+
+<div itemscope itemtype="http://schema.org/LocalBusiness">
+    
+    <div class="row">
+        <div class="small-12 medium-4 columns">
+            <h3 itemprop="name">Company Name</h3>
+            <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <span itemprop="streetAddress">3102 Highway 98</span> <br />
+                <span itemprop="addressLocality">Mexico Beach</span>,
+                <span itemprop="addressRegion">FL</span>
+                <span itemprop="postalCode">94086</span>
+            </div>
+            <div>
+                Phone: <span itemprop="telephone">850-648-4200</span>
+            </div>
+            <div>
+                Fax: <span itemprop="faxNumber">850-648-4200</span>
+            </div>
+
+            <meta itemprop="openingHours" content="Mo-Fr 11:00-14:30">
+            <meta itemprop="openingHours" content="Sa 17:00-21:30">
+            <h4>Hours</h4>
+            <dl>
+                <dt>Mon-Fri</dt>
+                <dd>7:30am - 5:30pm</dd>
+                <dt>Saturday</dt>
+                <dd>8:00am - 4:00pm</dd>
+                <dt>Sunday</dt>
+                <dd>Closed</dd>
+            </dl>
+        </div>
+
+        <div class="small-12 medium-8 columns flex-video">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d21930.11464681338!2d-112.02157986242678!3d46.60177893986397!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x534354f8c5aec837%3A0xed4c4b9fd605c927!2s1941+N+Last+Chance+Gulch%2C+Helena%2C+Mt+59601!5e0!3m2!1sen!2sus!4v1421880989498" width="600" height="450" frameborder="1" style="border:1"></iframe>
+        </div>
+    </div>
+
+    <fieldset class="panel">
+        <legend>Email Us</legend>
+    
+        <form>
+            <div class="row">
+                <div class="large-12 columns">
+                    <input type="text" placeholder="Your Name" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <input type="email" placeholder="Your Email" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <input type="tel" placeholder="Your Phone Number" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <textarea placeholder="Your message" rows="8"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-12 columns">
+                    <input type="submit" class="button" />
+                </div>
+            </div>
+
+        </form>
+    </fieldset>
+</div>

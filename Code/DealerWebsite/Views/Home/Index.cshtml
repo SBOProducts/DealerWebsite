@@ -4,7 +4,7 @@
     <div class="row">
         <div class="small-12 medium-4 large-12 columns">
             <h3>Inventory</h3>
-            @Html.Ipsum().ul(listCount: 8, wordCount: 3, links: true, ulAttributes: new { @class = "side-nav" })
+            @Html.Ipsum().ul(listCount: 8, wordCount: 3, links: true, ulAttributes: new { @class = "side-nav" } )
         </div>
         <div class="small-12 medium-4 large-12 columns">
             <h3>Parts</h3>
@@ -15,8 +15,6 @@
             @Html.Ipsum().ul(listCount: 9, wordCount: 2, links: true, ulAttributes: new { @class = "side-nav" })
         </div>
     </div>
-
-
 }
 
 <h1>Company Name</h1>
@@ -29,4 +27,34 @@
 @Html.Ipsum().p(paragraphCount: 3, sentenceCount: 5)
 
 <h2>Featured Items</h2>
-@Html.Action("ImageGrid", "Image")
+<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+    @for(int i = 0; i<9; i++){
+        <li>
+            <a class="th" href="@Url.Action("Details", "Product", new { id = 1 })">
+                @Html.Placehold(400, 400, text:"Item " + i.ToString())
+            </a>
+        </li>
+    }
+</ul>
+
+@section Bottom{
+
+    <div class="row">
+        <div class="small-12 columns">
+            <hr />
+            <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-haulmark-logo.png" />
+            <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-bradford-logo.png" />
+            <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-trails-west-logo.png" />
+            <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-mission-trailers-logo.png" />
+            <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-look-trailers-logo.png" />
+            <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-wilson-trailer-logo.png" />
+            <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-iron-panther-logo.png" />
+            <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-charmac-logo.png" />
+            <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-logan-coach-logo.png" />
+            <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-titan-logo.png" />
+            <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-cm-logo.png" />
+            <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-bigtex-logo.png" />
+        </div>
+    </div>
+
+}

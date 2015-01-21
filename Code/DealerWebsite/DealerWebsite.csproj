@@ -218,6 +218,10 @@
     <Content Include="App_Readme\Foundation for sites\readme.md" />
     <Content Include="Images\comet-th.jpg" />
     <Content Include="Images\comet.jpg" />
+    <Content Include="Images\CreditCards\logo_americanexpress.png" />
+    <Content Include="Images\CreditCards\logo_discover.png" />
+    <Content Include="Images\CreditCards\logo_mastercard.png" />
+    <Content Include="Images\CreditCards\logo_visa.png" />
     <Content Include="Ipsum_examples.txt" />
     <Content Include="Scripts\foundation\fastclick.js" />
     <Content Include="Scripts\foundation\foundation.abide.js" />

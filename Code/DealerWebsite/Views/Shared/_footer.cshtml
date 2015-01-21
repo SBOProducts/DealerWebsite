@@ -1,23 +1,57 @@
 ﻿<footer class="background-1" itemscope itemtype="http://schema.org/LocalBusiness">
     <div class="row">
-        <div class="small-12 medium-6 columns">
-            <h4 itemprop="name">Company Name</h4>
+        <div class="small-12 medium-4 columns">
+            
+            <h3 itemprop="name">Company Name</h3>
+            
             <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                 <span itemprop="streetAddress">3102 Highway 98</span> <br />
                 <span itemprop="addressLocality">Mexico Beach</span>,
                 <span itemprop="addressRegion">FL</span>
                 <span itemprop="postalCode">94086</span>
             </div>
+
             <div>
                 Phone: <span itemprop="telephone">850-648-4200</span>
             </div>
+
             <div>
                 Fax: <span itemprop="faxNumber">850-648-4200</span>
             </div>
+
+            <div>
+                <span itemscope itemtype="http://schema.org/CreditCard">
+                    <meta itemprop="name" content="Visa" />
+                    <span itemprop="image">
+                        <img src="@Url.Content("~/Images/CreditCards/logo_visa.png")" alt="Visa" />
+                    </span>
+                </span>
+                <span itemscope itemtype="http://schema.org/CreditCard">
+                    <meta itemprop="name" content="Master Card" />
+                    <span itemprop="image">
+                        <img src="@Url.Content("~/Images/CreditCards/logo_mastercard.png")" alt="Master Card" />
+                    </span>
+                </span>
+                <span itemscope itemtype="http://schema.org/CreditCard">
+                    <meta itemprop="name" content="Discover" />
+                    <span itemprop="image">
+                        <img src="@Url.Content("~/Images/CreditCards/logo_discover.png")" alt="Discover" />
+                    </span>
+                </span>
+                <span itemscope itemtype="http://schema.org/CreditCard">
+                    <meta itemprop="name" content="American Express" />
+                    <span itemprop="image">
+                        <img src="@Url.Content("~/Images/CreditCards/logo_americanexpress.png")" alt="American Express" />
+                    </span>
+                </span>
+            </div>
+            
+            <hr class="show-for-small-only" />
         </div>
-        <div class="small-12 medium-6 columns">
+        <div class="small-12 medium-4 columns">
             <meta itemprop="openingHours" content="Mo-Fr 11:00-14:30">
             <meta itemprop="openingHours" content="Sa 17:00-21:30">
+            <h3>Hours</h3>
             <dl>
                 <dt>Mon-Fri</dt>
                 <dd>7:30am - 5:30pm</dd>
@@ -26,6 +60,21 @@
                 <dt>Sunday</dt>
                 <dd>Closed</dd>
             </dl>
+            <hr class="show-for-small-only" />
+        </div>
+        <div class="small-12 medium-4 columns">
+            <h3>Affiliations</h3>
+            <ul class="small-block-grid-3">
+            @for(int i = 0; i<7; i++){
+                <li>
+                    <a class="th" href="#">
+                        @Html.Placehold(60, 35)
+                    </a>
+                </li>
+            }
+            </ul>
         </div>
     </div>
+
+    
 </footer>
