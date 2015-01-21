@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "Member";
+}
+
+@section aside{
+    <h3>Members</h3>
+    @Html.Ipsum().ul(listCount : 5, wordCount : 2, links : true)
+}
+
+<h2>@Html.Ipsum().Words(2)</h2>
+
+@Html.Placehold(200, 200, text: "Member Photo", htmlAttributes: new {@class="float-left"})
+
+@Html.Ipsum().p(5)

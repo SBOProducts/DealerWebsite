@@ -192,12 +192,14 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\GalleryController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImageController.cs" />
     <Compile Include="Controllers\InventoryController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\StaffController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -274,12 +276,16 @@
     <Content Include="Views\Product\Details.cshtml" />
     <Content Include="Views\Image\ImageGrid.cshtml" />
     <Content Include="Views\Image\ImageList.cshtml" />
-    <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Navigation\Breadcrumbs.cshtml" />
     <Content Include="Views\Shared\_footer.cshtml" />
     <Content Include="Views\Shared\_themeReference.cshtml" />
     <Content Include="Views\Shared\_copyright.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Image\ImageCarousel.cshtml" />
+    <Content Include="Views\Gallery\Index.cshtml" />
+    <Content Include="Views\Gallery\Gallery.cshtml" />
+    <Content Include="Views\Staff\List.cshtml" />
+    <Content Include="Views\Staff\Member.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -47,7 +47,7 @@
                 <meta itemprop="datePublished" content="2015-01-01" />
                 <meta itemprop="representativeOfPage" content="true" />
                 <a class="th" href="@Url.Content("~/Images/comet.jpg")">
-                    <img src="@Url.Content("~/Images/comet-th-sm.jpg")" itemprop="contentUrl" data-caption="Image Caption" />
+                    @Html.Placehold(100, 100, text: "Image " + i.ToString(), htmlAttributes: new { itemprop = "contentUrl", data_caption = "Image Caption " + i.ToString() })
                 </a>
             </li>
              }
@@ -56,6 +56,6 @@
 
     <h3>Videos</h3>
     <div class="flex-video">
-        <iframe width="420" height="315" src="//www.youtube.com/embed/aiBt44rrslw" frameborder="0" allowfullscreen></iframe>
+        @Html.Placehold(900, 415, text: "You Tube Video")
     </div>
 </div>

@@ -1,0 +1,16 @@
+﻿@for(int i = 0; i<6; i++){
+    <div class="row panel" itemscope itemtype="http://schema.org/Person">
+        <div class="medium-4 columns">
+            <a class="th" itemprop="url" href="@Url.Action("Member", "Staff")">
+                @Html.Placehold(400, 400, text: "Staff Member " + i.ToString(), htmlAttributes: new { itemprop = "image", alt="Image of member" })
+            </a>
+        </div>
+        <div class="medium-8 columns">
+            <h3 itemprop="name">@Html.Ipsum().Words(2)</h3>
+            <h4 itemprop="jobTitle">@Html.Ipsum().Words(3)</h4>
+            <div class="show-for-medium-up">
+                @Html.Ipsum().p()
+            </div>
+        </div>
+    </div>
+}

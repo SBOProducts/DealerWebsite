@@ -3,9 +3,12 @@
 }
 
 @section aside{
-
     <h3>Services</h3>    
     @Html.Ipsum().ul(listCount : 3, wordCount : 2, links : true)
 }
 
-<h3>Service</h3>
+<h3>@Html.Ipsum().Words(3)</h3>
+
+@Html.Ipsum().p(4)
+
+@Html.Action("ImageGrid", "Image")

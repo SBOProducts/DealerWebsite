@@ -29,7 +29,13 @@
                 </ul>
             </li>
             <li class="divider"></li>
-            <li>@Html.ActionLink("Gallery", "Gallery", "Home")</li>
+            <li class="has-dropdown">
+                @Html.ActionLink("Our Work", "Index", "Gallery")
+                <ul class="dropdown">
+                    <li id="" data-seq="1">@Html.ActionLink("Gallery 1", "Gallery", "Gallery", new { Id = 1 }, null)</li>
+                    <li id="" data-seq="2">@Html.ActionLink("Gallery 2", "Gallery", "Gallery", new { Id = 2 }, null)</li>
+                </ul>
+            </li>
             <li class="divider"></li>
             <li>@Html.ActionLink("About", "About", "Home")</li>
             <li class="divider"></li>
