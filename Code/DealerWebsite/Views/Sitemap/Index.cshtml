@@ -1,0 +1,110 @@
+﻿@{
+    ViewBag.Title = "Sitemap";
+    Layout = "~/Views/Layouts/Default/Wide.cshtml";
+}
+
+<div class="sitemap">
+
+    <h2 class="text-center">Sitemap</h2>
+
+    <p>
+        <strong>Find what you're looking for?</strong> Our sitemap puts it all out in the open, every page on our site is listed below. 
+    </p>
+
+    <hr class="dotted" />
+
+    <h3>Company Name</h3>
+    <p>
+        @Html.Ipsum().p()
+    </p>
+
+    <div class="row">
+        <div class="medium-4 columns">
+            <h4>@Html.ActionLink("Home", "Index", "Home")</h4>
+            <p>
+                Featured products, upcoming events, and company information.
+            </p>
+        </div>
+        <div class="medium-4 columns">
+            <h4>@Html.ActionLink("About", "About", "Home")</h4>
+            <p>
+                Who we are and what we do.
+            </p>
+        </div>
+        <div class="medium-4 columns">
+            <h4>@Html.ActionLink("Contact", "Contact", "Home")</h4>
+            <p>
+                Our location, phone and fax numbers, a map, and a contact form. 
+            </p>
+        </div>
+    </div>
+
+
+    <hr class="dotted" />
+
+    <div class="row">
+        <div class="medium-4 columns">
+            <h4>@Html.ActionLink("Inventory", "Index", "Inventory")</h4>
+            <ul>
+                <li>
+                    @Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Category", "Inventory", new { Id = 1 }, null)
+                    <ul>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                    </ul>
+                </li>
+                <li>
+                    @Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Category", "Inventory", new { Id = 1 }, null)
+                    <ul>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                    </ul>
+                </li>
+                <li>
+                    @Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Category", "Inventory", new { Id = 1 }, null)
+                    <ul>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                        <li>@Html.ActionLink(Html.Ipsum().Words(2).ToString(), "Details", "Product", new { Id = 1 }, null)</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="medium-4 columns">
+            <h4>@Html.ActionLink("Parts & Service", "Index", "Services")</h4>
+            <ul>
+                <li>@Html.ActionLink(Html.Ipsum().Words(3).ToString(), "Service", "Services", new { Id = 1 }, null)</li>
+                <li>@Html.ActionLink(Html.Ipsum().Words(3).ToString(), "Service", "Services", new { Id = 1 }, null)</li>
+                <li>@Html.ActionLink(Html.Ipsum().Words(3).ToString(), "Service", "Services", new { Id = 1 }, null)</li>
+                <li>@Html.ActionLink(Html.Ipsum().Words(3).ToString(), "Service", "Services", new { Id = 1 }, null)</li>
+                <li>@Html.ActionLink(Html.Ipsum().Words(3).ToString(), "Service", "Services", new { Id = 1 }, null)</li>
+            </ul>
+        </div>
+        <div class="medium-4 columns">
+            <h4>@Html.ActionLink("Our Work", "Index", "Gallery")</h4>
+            <ul>
+                <li>@Html.ActionLink(Html.Ipsum().Words(3).ToString(), "Gallery", "Gallery", new { Id = 1 }, null)</li>
+                <li>@Html.ActionLink(Html.Ipsum().Words(3).ToString(), "Gallery", "Gallery", new { Id = 1 }, null)</li>
+                <li>@Html.ActionLink(Html.Ipsum().Words(3).ToString(), "Gallery", "Gallery", new { Id = 1 }, null)</li>
+                <li>@Html.ActionLink(Html.Ipsum().Words(3).ToString(), "Gallery", "Gallery", new { Id = 1 }, null)</li>
+                <li>@Html.ActionLink(Html.Ipsum().Words(3).ToString(), "Gallery", "Gallery", new { Id = 1 }, null)</li>
+                <li>@Html.ActionLink(Html.Ipsum().Words(3).ToString(), "Gallery", "Gallery", new { Id = 1 }, null)</li>
+                <li>@Html.ActionLink(Html.Ipsum().Words(3).ToString(), "Gallery", "Gallery", new { Id = 1 }, null)</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</div>

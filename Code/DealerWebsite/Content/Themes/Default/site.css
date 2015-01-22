@@ -1,19 +1,50 @@
-﻿
+﻿label.checkbox { display: inline; }
+.pad { margin: 7px; }
+hr.dotted { border-style: dashed; }
+
+
 .background-1 { 
     background-color: #008CBA; 
     padding: 5px;
     margin-top:10px;
-}
-
-.background-2 { 
-    background-color: #000000; 
-    padding: 5px;
-}
-
-footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer div {
     color: #fff;
 }
 
-label.checkbox {
-    display: inline;
+.background-1 h1, .background-1 h2, .background-1 h3, .background-1 h4, .background-1 h5, .background-1 h6, .background-1 div {
+    color: #fff;
+}
+
+
+.background-2 { 
+    background-color: #333333; 
+    padding: 5px;
+    color:#666;
+}
+
+
+.background-3 {
+    background-color: #47D4FF;
+}
+
+
+
+
+/* Centered inline lists*/
+ul.centered-inline-list { list-style-type: none; text-align: center; }
+ul.centered-inline-list li { display: inline-block; }
+ul.centered-inline-list li {
+    font-weight:700;
+    text-transform: uppercase;
+}
+ul.centered-inline-list li a { 
+    color: #666;
+    padding: 3px 6px; 
+}
+ul.centered-inline-list li a:hover { 
+    color: #777;
+}
+
+/* Sitemap lists*/
+.sitemap ul li {
+    list-style: none;
 }

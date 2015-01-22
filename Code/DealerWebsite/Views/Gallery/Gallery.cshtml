@@ -8,12 +8,12 @@
     @Html.Ipsum().ul(listCount : 3, wordCount : 2, links : true)
 }
 
-<h2>Gallery</h2>
+<h2>@Html.Ipsum().Words(3)</h2>
 
 
 <blockquote>
     @Html.Ipsum().p(1)
-    <cite>Happy Customer</cite>
+    <cite>@Html.Ipsum().Words(2)</cite>
 </blockquote>
 
 @Html.Action("ImageGrid", "Image")

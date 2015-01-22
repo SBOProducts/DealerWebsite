@@ -1,7 +1,24 @@
 ﻿<footer class="background-2">
     <div class="row">
         <div class="small-12 columns">
-            &copy; Copyright @DateTime.Now.Year.ToString() Company Name
+            <ul class="centered-inline-list">
+                <li>@Html.ActionLink("About", "About", "Home")</li>
+                <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                <li>@Html.ActionLink("Inventory", "Index", "Inventory")</li>
+                <li>@Html.ActionLink("Parts & Service", "Index", "Service")</li>
+                <li>@Html.ActionLink("Our Work", "Index", "Gallery")</li>
+                <li>@Html.ActionLink("Sitemap", "Index", "Sitemap")</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="small-6 columns">
+            <small>&copy; Copyright @DateTime.Now.Year.ToString() Company Name. All rights reserved.</small>
+        </div>
+        <div class="small-6 columns">
+            <a href="http://www.sboproducts.com" target="_blank" class="right">
+                <img src="@Url.Content("~/Images/SBOLink.png")" alt="Small Business Online" />
+            </a>
         </div>
     </div>
 </footer>

@@ -1,25 +1,21 @@
-﻿@section aside{
-    @Html.Placehold(1200, 300, "Logo")
+﻿@{
+    ViewBag.Title = "Welcome";
+}
 
+@section aside{
     <div class="row">
         <div class="small-12 medium-4 large-12 columns">
             <h3>Inventory</h3>
             @Html.Ipsum().ul(listCount: 8, wordCount: 3, links: true, ulAttributes: new { @class = "side-nav" } )
         </div>
         <div class="small-12 medium-4 large-12 columns">
-            <h3>Parts</h3>
-            @Html.Ipsum().ul(listCount: 8, wordCount: 2, links: true, ulAttributes: new { @class = "side-nav" })
-        </div>
-        <div class="small-12 medium-4 large-12 columns">
-            <h3>Service</h3>
+            <h3>Parts & Service</h3>
             @Html.Ipsum().ul(listCount: 9, wordCount: 2, links: true, ulAttributes: new { @class = "side-nav" })
         </div>
     </div>
 }
 
 <h1>Company Name</h1>
-
-
 
 @Html.Partial("~/Views/Image/ImageCarousel.cshtml")
 

@@ -199,6 +199,7 @@
     <Compile Include="Controllers\NavigationController.cs" />
     <Compile Include="Controllers\ProductController.cs" />
     <Compile Include="Controllers\ServicesController.cs" />
+    <Compile Include="Controllers\SitemapController.cs" />
     <Compile Include="Controllers\StaffController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -222,6 +223,7 @@
     <Content Include="Images\CreditCards\logo_discover.png" />
     <Content Include="Images\CreditCards\logo_mastercard.png" />
     <Content Include="Images\CreditCards\logo_visa.png" />
+    <Content Include="Images\SBOLink.png" />
     <Content Include="Ipsum_examples.txt" />
     <Content Include="Scripts\foundation\fastclick.js" />
     <Content Include="Scripts\foundation\foundation.abide.js" />
@@ -272,7 +274,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Views\Navigation\MainNav.cshtml" />
-    <Content Include="Views\Layouts\Default\Layout.cshtml" />
+    <Content Include="Views\Layouts\Default\TwoColumn.cshtml" />
     <Content Include="Views\Inventory\Index.cshtml" />
     <Content Include="Views\Services\Index.cshtml" />
     <Content Include="Views\Inventory\Category.cshtml" />
@@ -290,6 +292,8 @@
     <Content Include="Views\Gallery\Gallery.cshtml" />
     <Content Include="Views\Staff\List.cshtml" />
     <Content Include="Views\Staff\Member.cshtml" />
+    <Content Include="Views\Sitemap\Index.cshtml" />
+    <Content Include="Views\Layouts\Default\Wide.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
