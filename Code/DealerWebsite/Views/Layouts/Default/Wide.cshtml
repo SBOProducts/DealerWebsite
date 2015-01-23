@@ -21,14 +21,19 @@
 
     @Html.Action("Breadcrumbs", "Navigation")
 
-    @RenderSection("Top", false)
+    <div class="row" id="ContentWrapper">
+        <div class="small-12 columns">
+            <img src="http://www.elkmtnsales.com/i/header.png" />
+            @RenderSection("Top", false)
 
-    <div class="row">
-        <article class="large-12 columns">
-            @RenderBody()
-        </article>
+            <div class="row">
+                <article class="large-12 columns">
+                    @RenderBody()
+                </article>
+            </div>
+            @RenderSection("Bottom", false)
+        </div>
     </div>
-    @RenderSection("Bottom", false)
 
     @Html.Partial("_footer")
 

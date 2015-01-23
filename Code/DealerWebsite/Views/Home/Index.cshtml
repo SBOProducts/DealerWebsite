@@ -2,6 +2,7 @@
     ViewBag.Title = "Welcome";
 }
 
+
 @section aside{
     <div class="row">
         <div class="small-12 medium-4 large-12 columns">
@@ -15,23 +16,76 @@
     </div>
 }
 
-<h1>Company Name</h1>
+@section top{
 
+}
+
+<h1>Elk Mountain</h1>
+
+@*
 @Html.Partial("~/Views/Image/ImageCarousel.cshtml")
+*@
 
 
-@Html.Ipsum().p(paragraphCount: 3, sentenceCount: 5)
+<p>It all started a few years ago with a simple dream and strong values. In the last few years Elk Mountain has grown into one of the largest independent dealers in the West. We are very progressive and constantly growing. We believe there is nothing more important to listening to the customer and providing service that is second to none. Take a look at our many different products and let us show you how we can provide for all your transportation needs, or just help to put some fun in your life.</p>
+<img src="http://www.elkmtnsales.com/i/one-price.png" alt="ONE PRICE! CLEARLY PRICED RIGHT ON THE WINDOW" style="float: right; width: 250px; height: 250px;">
+<h2>One price, Clearly Priced, Right on the Window</h2>
+<p>Every vehicle we sell is clearly marked with our lowest possible price. No negotiations. No headaches, No stress. You never have to worry about someone getting a better deal. Car buying shouldn't be about how well you know the owner, it should be about what's right.</p>
+<h2>Non-Commissioned Sales Staff</h2>
+<p>Every person at the dealership works on a salary, not commission. We are more like a personal assistant than a salesperson.  It doesn't matter what you purchase, we are just glad you found something that suited you and your family's needs. Our job is to make your purchase as stress free, easy and comfortable as possible.</p>
+<h2>A Better Trade-in</h2>
+<p>Ever wonder why it is so hard to get a fair number for your trade-in?  It's because, the less they give you the more they make. We changed that process and invite you to get involved in the appraisal.  We use real numbers calculated by current market prices, and we will show you. We will write you a check for your car, even if you don't buy from us. One trade-in value, on every vehicle...it's what's right.</p>
 
-<h2>Featured Items</h2>
-<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
-    @for(int i = 0; i<9; i++){
-        <li>
-            <a class="th" href="@Url.Action("Details", "Product", new { id = 1 })">
-                @Html.Placehold(400, 400, text:"Item " + i.ToString())
-            </a>
-        </li>
-    }
+<h2>Featured Items (slider)</h2>
+@* Use an image slider to display the featured items *@
+
+@{
+    string[] srcs = {
+                        "http://www.fridayimages.com/68542452006220913/E157735.jpg",
+                        "http://www.fridayimages.com/68542452006220913/Z413234.jpg",
+                        "http://www.fridayimages.com/68542452006220913/LB96076.jpg",
+                        "http://www.fridayimages.com/68542452006220913/P040323.jpg",
+                        "http://www.fridayimages.com/68542452006220913/G312210.jpg"
+                    };
+                        
+}
+<ul data-orbit>
+@for (int i = 0; i < 5; i++)
+{
+    Random rnd = new Random();
+    <li>
+        <a class="carousel-product" href="@Url.Action("Details", "Product", new { id = 1 })">
+            <div class="photo">
+                <img src="@srcs[i]" alt="@Html.Ipsum().Words(4)" />
+            </div>
+            <div class="info">
+                <span class="name">@Html.Ipsum().Words(4)</span>
+                <span class="price">$@rnd.Next(5000, 50000).ToString("#,###.00")</span>
+            </div>
+        </a>
+    </li>
+}
 </ul>
+
+<h2>Featured Items (table)</h2>
+<ul class="small-block-grid-2 medium-block-grid-3 large-block-grid-4">
+@for (int i = 0; i < 5; i++)
+{
+    Random rnd = new Random();
+    <li>
+        <a class="grid-product" href="@Url.Action("Details", "Product", new { id = 1 })">>
+            <div class="photo">
+                <img src="@srcs[i]" alt="@Html.Ipsum().Words(4)" />
+            </div>
+            <div class="info">
+                <span class="name">@Html.Ipsum().Words(4)</span>
+                <span class="price">$@rnd.Next(5000, 50000).ToString("#,###.00")</span>
+            </div>
+        </a>
+    </li>    
+}
+</ul>
+
 
 @section Bottom{
 

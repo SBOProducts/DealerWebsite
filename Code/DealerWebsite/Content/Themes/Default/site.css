@@ -1,12 +1,54 @@
-﻿label.checkbox { display: inline; }
-.pad { margin: 7px; }
+﻿body {
+    background-color:#000;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.breadcrumbs {
+    display: none;
+}
+
+@media only screen and (min-width: 1000px) {
+    body {
+        background-image: url(images/wallpaper2.jpg);
+    }
+
+    .breadcrumbs {
+        display:block;
+    }
+}
+
+#ContentWrapper {
+    background-color:rgba(255, 255, 255, 1);
+    margin-top:10px;
+    margin-bottom:10px;
+    border-radius:10px;
+}
+
+label.checkbox { display: inline; }
 hr.dotted { border-style: dashed; }
+.pad { margin: 7px; }
+.orbit-container { border: 1px solid #000; }
+
+a.carousel-product { background-color:#000; display:block;}
+.carousel-product .photo { padding:25px inherit; text-align:center; }
+.carousel-product .photo img { display:inline; }
+.carousel-product .info { font-weight:700; text-align:center; padding:5px; }
+.carousel-product .info .name { color:#fff; }
+.carousel-product .info .price { color:#f00; }
+
+a.grid-product { display: block; }
+.grid-product .info { background-color:#ddd; padding:3px; }
+.grid-product .info .name {  }
+.grid-product .info .price { color:#f00; }
+
+
+
 
 
 .background-1 { 
     background-color: #008CBA; 
     padding: 5px;
-    margin-top:10px;
     color: #fff;
 }
 

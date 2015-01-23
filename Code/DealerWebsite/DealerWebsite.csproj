@@ -244,6 +244,7 @@
     <Content Include="Scripts\foundation\foundation.tooltip.js" />
     <Content Include="Scripts\foundation\foundation.topbar.js" />
     <Content Include="Scripts\foundation\jquery.cookie.js" />
+    <None Include="Properties\PublishProfiles\FTP Publishing.pubxml" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
@@ -255,7 +256,6 @@
     <Content Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
-    <Content Include="Content\Site.css" />
     <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
@@ -297,6 +297,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Content\Themes\Default\images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

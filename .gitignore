@@ -16,6 +16,11 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+# =========================
+# Visual Studio Files
+# =========================
+Code/DealerWebsite/obj/*
+Code/DealerWebsite/bin/*
 
 # =========================
 # Operating System Files

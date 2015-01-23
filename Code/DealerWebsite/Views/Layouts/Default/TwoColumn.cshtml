@@ -21,18 +21,23 @@
 
     @Html.Action("Breadcrumbs", "Navigation")
 
-    @RenderSection("Top", false)
+    <div class="row" id="ContentWrapper">
+        <div class="small-12 columns">
+            
+            <img src="http://www.elkmtnsales.com/i/header.png" />
+            @RenderSection("Top", false)
+            <div class="row">
+                <article class="large-9 large-push-3 columns">
+                    @RenderBody()
+                </article>
+                <aside class="large-3 large-pull-9 columns">
+                    @RenderSection("aside", true)
+                </aside>
+            </div>
+            @RenderSection("Bottom", false)
 
-    <div class="row">
-        <article class="large-9 large-push-3 columns">
-            @RenderBody()
-        </article>
-        <aside class="large-3 large-pull-9 columns">
-            @Html.Placehold(1200, 300, "Logo")
-            @RenderSection("aside", true)
-        </aside>
+        </div>
     </div>
-    @RenderSection("Bottom", false)
 
     @Html.Partial("_footer")
 
