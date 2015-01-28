@@ -34,7 +34,8 @@
 <h2>Non-Commissioned Sales Staff</h2>
 <p>Every person at the dealership works on a salary, not commission. We are more like a personal assistant than a salesperson.  It doesn't matter what you purchase, we are just glad you found something that suited you and your family's needs. Our job is to make your purchase as stress free, easy and comfortable as possible.</p>
 <h2>A Better Trade-in</h2>
-<p>Ever wonder why it is so hard to get a fair number for your trade-in?  It's because, the less they give you the more they make. We changed that process and invite you to get involved in the appraisal.  We use real numbers calculated by current market prices, and we will show you. We will write you a check for your car, even if you don't buy from us. One trade-in value, on every vehicle...it's what's right.</p>
+<p>Ever wonder why it is so hard to get a fair number for your trade-in?  It's because, the less they give you the more they make. We changed that process and invite you to get involved in the appraisal.  We use real numbers calculated by current market prices, and we will show you. We will write you a check for your car, even if you don't buy from us. One trade-in value, on every vehicle...it's what's right.</p>
+
 
 <h2>Featured Items (slider)</h2>
 @* Use an image slider to display the featured items *@
@@ -73,7 +74,7 @@
 {
     Random rnd = new Random();
     <li>
-        <a class="grid-product" href="@Url.Action("Details", "Product", new { id = 1 })">>
+        <a class="grid-product" href="@Url.Action("Details", "Product", new { id = 1 })">
             <div class="photo">
                 <img src="@srcs[i]" alt="@Html.Ipsum().Words(4)" />
             </div>
@@ -88,10 +89,11 @@
 
 
 @section Bottom{
-
+    
     <div class="row">
         <div class="small-12 columns">
             <hr />
+            <h3>Partners</h3>
             <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-haulmark-logo.png" />
             <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-bradford-logo.png" />
             <img src="http://www.steerin.com/images/steer-in-trailers-brand-nav-trails-west-logo.png" />
